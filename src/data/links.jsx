@@ -35,6 +35,11 @@ export const cardLinks = [
     active: false,
   },
   {
+    name: 'swift',
+    path: '/swift',
+    active: false,
+  },
+  {
     name: 'web',
     path: '/web',
     active: false,

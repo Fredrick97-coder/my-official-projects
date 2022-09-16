@@ -6,6 +6,7 @@ function ProjectCards() {
   const [toggleActive, setToggleActive] = useState({
     reactNative: true,
     expo: false,
+    swift: false,
     web: false,
   });
 
@@ -15,6 +16,7 @@ function ProjectCards() {
     setToggleActive({
       reactNative: name === 'reactNative' ? true : false,
       expo: name === 'expo' ? true : false,
+      swift: name === 'swift' ? true : false,
       web: name === 'web' ? true : false,
     });
   };
@@ -22,7 +24,7 @@ function ProjectCards() {
   return (
     <section className="relative flex self-center justify-center">
       <div className="mt-[-50px] mb-[50px] w-[70%] bg-white shadow-md ">
-        <ul className="flex my-5">
+        <ul className="project-link-wrap flex my-5 ">
           {cardLinks.map((link, index) => (
             <Link
               to={link.path}

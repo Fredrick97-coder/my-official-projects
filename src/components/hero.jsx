@@ -20,6 +20,7 @@ function Hero() {
         <h3 className="hero-shortword text-[#555] text-center text-4xl py-3 ">
           components for your next project
         </h3>
+        <p className="sign">clarkson</p>
       </div>
     </section>
   );
